@@ -1,0 +1,130 @@
+/* Import the fonts up here*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+body {
+    background-color: #e3edea;
+    height:100vh;
+    width:100vw;
+    font-family: 'Nunito', sans-serif;
+    margin:0px;
+}
+
+@media screen and (prefers-color-scheme: light) {
+    body {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    body {
+      background-color: #232e34;
+      color: white;
+    }
+  }
+
+#flexBody{
+    display:flex;
+    flex-direction: row;
+    overflow: hidden;
+    column-gap: 3%;
+    height:83%;
+    justify-content: center;
+}
+  
+h1 {
+    color: white;
+}
+
+#aside{
+    flex-grow: 1;
+}
+
+#header{
+    font-size: 150%;
+    height:10%;
+    display:flex;
+    flex-direction: row;
+    padding:1%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom:1%;
+    column-gap: 2%;
+    padding-left: 3%;
+    align-items: center;
+}
+
+#header div{
+    justify-content: center;
+    text-align: center;
+    font-size:250%;
+    transition-duration: 0.2s;
+}
+
+/*Add mobile customization for css for the header*/
+@media screen and (max-width: 700px) {
+    #header{
+        font-size:100%;
+    }
+}
+
+#header > div > p{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+.headerIcon{
+    font-size:100%;
+}
+
+.headerIconA{
+    color:inherit;
+    text-decoration: none;
+}
+
+.headerIconA:hover{
+    color:rgb(63, 63, 63);
+}
+
+.contentDiv{
+    width:70%;
+    background-color: #232e34;
+    border-radius: 3vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-indent: 3%;
+    text-align: center;
+    opacity: 0.9;
+}
+
+#footer{
+    text-align: center;
+    font-size:70%;
+    height:3%;
+    position: fixed;
+    bottom:0px;
+    width:100%;
+}
+
+.topNavA{
+    font-family: 'Nunito', sans-serif;    
+    margin:0%;
+    border-radius: 0%;
+    border-bottom: 1% black solid;
+    color:inherit;
+    text-decoration: none;
+    font-size: 50%;
+
+}
+
+.topNavA:hover{
+    opacity: 0.5;
+}
+
+#githubIcon{
+    color:inherit;
+    text-decoration: none;
+}
+
+#githubIcon:hover{
+    opacity: 0.5;
+}

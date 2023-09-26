@@ -1,0 +1,47 @@
+/*
+Source: https://codepen.io/smhigley/pen/gwYPvR
+Author: Sarah Higley
+License: MIT License
+*/
+  
+  
+  .falling-leaves {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 0);
+    border: 0px solid #fff;
+    border-radius: 0px;
+    background: url(https://wallpaperaccess.com/full/1146672.jpg) no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0.4;
+  }
+  
+  .leaf-scene {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      transform-style: preserve-3d;
+    }
+
+    .leaf-scene > div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        background: url(/Users/adamN/Downloads/main-main/fallingLeavesFolder/leaf.png) no-repeat; /* cc0 https://purepng.com/photo/2361/clipart-red-autumn-leaf-clipart */
+        background-size: 100%;
+        transform-style: preserve-3d;
+        backface-visibility: visible;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+        image-rendering: -moz-crisp-edges;
+
+      }
