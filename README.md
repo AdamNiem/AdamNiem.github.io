@@ -1,3 +1,8 @@
+# My portfolio Site
+Built on top of the Astrofy template, their readme is below
+
+# ------------ ------------ ------------ ------------ ------------
+
 # Astrofy | Personal Portfolio Website Template
 
 ![Astrofy | Personal Porfolio Website Template](public/social_img.webp)

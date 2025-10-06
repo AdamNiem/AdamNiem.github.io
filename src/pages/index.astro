@@ -11,53 +11,60 @@ const last_posts = posts.slice(0, 3);
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
+    <div class="text-xl py-1">Hello 👋</div>
+    <div class="text-5xl font-bold">I'm Adam Niemczura</div>
+    <div class="text-3xl py-3 font-bold">CS+Math Junior at Clemson University</div>
     <div class="py-2">
       <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
+        Welcome to my personal site, I am currently a 3rd year student at Clemson University. My interests include Computer Vision, Web Development, and electronics. Feel free to reach out if there's any issues or if you have any inquiries. Thanks for reading :)
       </text>
     </div>
     <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
-      </a>
+      <a class="btn" href="https://github.com/AdamNiem" target="_blank"> Let's connect!</a>
     </div>
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-2">Some of my recent projects {"</>"}</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="SAR Web App"
+    img="/project_thumbnails/SARWebAppThumbnail.png"
+    desc="Web app made during 2025 Nasa Space Apps with story around using SAR to try to diagnose the reason for the rise in floods in Sri Lanka"
+    url="https://github.com/AdamNiem/SriLankaSARWebApp"
     badge="NEW"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Plant Phenomics ML Modelling Django Web App"
+    img="/project_thumbnails/DjangoPlantPhenomThumbnail.png"
+    desc="Django Web app in Django to deploy machine learning regression models for predicting specific Plant Phenomic traits. Uses Polars, Scikit-Learn, Django-Allauth, Celery, Postgresql, Redis"
+    url=""
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="Goose Dataset Compression Suite"
+    img="/project_thumbnails/gooseThumbnail.png"
+    desc="Applied various SOTA LiDAR or point based compressors on the GOOSE Dataset to test how they affect downstream semantic segmentation tasks"
+    url="https://github.com/AdamNiem/goose-reno-compression-suite"
   />
 
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+     <!-- Added hardcoded card for the sri lanka one. Not best solution probably but works for now -->
+    <>
+    <HorizontalCard
+          title={"Sri Lanka: Drowned by Development"}
+          img={"/sri_lanka_flood_thumbnail.webp"}
+          desc={"Article about using SAR satellite imagery  to address the rise in flooding in Sri Lanka, specifically in the Western Province."}
+          url={"https://storymaps.arcgis.com/stories/e13536d81252430a9fa5752879b85f7f"}
+          target="_self"
+          badge={"NEW"}
+          tags={["Sri Lanka", "SAR", "ArcGis StoryMap"]}
+        />
+      <div class="divider my-0" />
+    </>
   </div>
 
   {
@@ -76,3 +83,6 @@ const last_posts = posts.slice(0, 3);
     ))
   }
 </BaseLayout>
+
+
+

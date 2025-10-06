@@ -11,21 +11,38 @@ export async function getStaticPaths({ paginate }) {
 }
 
 const { page } = Astro.props;
+const hardCodedCardPresent: boolean = true;
 ---
+
 
 <BaseLayout title="Blog" sideBarActiveItemID="blog">
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Blog</div>
   </div>
 
+  <!-- Added hardcoded card for the sri lanka one. Not best solution probably but works for now -->
+  <>
+  <HorizontalCard
+        title={"Sri Lanka: Drowned by Development"}
+        img={"/sri_lanka_flood_thumbnail.webp"}
+        desc={"Article about using SAR satellite imagery  to address the rise in flooding in Sri Lanka, specifically in the Western Province."}
+        url={"https://storymaps.arcgis.com/stories/e13536d81252430a9fa5752879b85f7f"}
+        target="_self"
+        badge={"NEW"}
+        tags={["Sri Lanka", "SAR", "ArcGis StoryMap"]}
+      />
+    <div class="divider my-0" />
+  </>
+
   {
-    page.data.length === 0 ? (
+    page.data.length === 0 && !hardCodedCardPresent ? (
       <div class="bg-base-200 border-l-4 border-secondary w-full p-4 min-w-full">
         <p class="font-bold">Sorry!</p>
         <p>There are no blog posts to show at the moment. Check back later!</p>
       </div>
     ) : (
       <ul>
+
         {page.data.map((post) => (
           <>
             <HorizontalCard
@@ -43,6 +60,8 @@ const { page } = Astro.props;
       </ul>
     )
   }
+
+
 
   <div class="flex justify-between">
     {

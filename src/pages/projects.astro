@@ -5,47 +5,54 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Web Dev</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="SAR Web App"
+    img="/project_thumbnails/SARWebAppThumbnail.png"
+    desc="Web app made during 2025 Nasa Space Apps with story around using SAR to try to diagnose the reason for the rise in floods in Sri Lanka"
+    url="https://github.com/AdamNiem/SriLankaSARWebApp"
     badge="NEW"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Median Split Color Quantization Implementation.png"
+    img="/project_thumbnails/medianColorSplitThumbnail.png"
+    desc="Simple color quantizer demo using median split quantization combined with rgb color difference, rgb color differnce, and xyz color difference"
+    url="https://github.com/AdamNiem/medianSplitColorQuantizerDemo"
+  />
+
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Plant Phenomics ML Modelling Django Web App"
+    img="/project_thumbnails/DjangoPlantPhenomThumbnail.png"
+    desc="Django Web app in Django to deploy machine learning regression models for predicting specific Plant Phenomic traits. Uses Polars, Scikit-Learn, Django-Allauth, Celery, Postgresql, Redis"
+    url=""
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Machine Learning / Data Science</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="PTV-3 on GOOSE Dataset"
+    img="/project_thumbnails/gooseThumbnail.png"
+    desc="Applied latest Point Transformer-V3 version to the GOOSE Dataset. Achieving roughly 80% mIoU similar to the PTV-3 implementation by the GOOSE dataset authors"
+    url="https://github.com/AdamNiem/ptv3OnGoose"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="Goose Dataset Compression Suite"
+    img="/project_thumbnails/gooseThumbnail.png"
+    desc="Applied various SOTA LiDAR or point based compressors on the GOOSE Dataset to test how they affect downstream semantic segmentation tasks"
+    url="https://github.com/AdamNiem/goose-reno-compression-suite"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="UNet Implementation"
+    img="/project_thumbnails/unetProjThumbnail.png"
+    desc="Implemented a UNet Model in Pytorch to segment images from Mississippi State University's CAVs Traversability Dataset (CAT)"
+    url="https://github.com/AdamNiem/unetMLBD/tree/main"
   />
 </BaseLayout>
