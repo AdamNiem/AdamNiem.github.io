@@ -1,7 +1,9 @@
+# NOTE: Do not upgrade to DaisyUI 5 or likely also Tailwind 4. These will cause breaking changes
+
 # My portfolio Site
 Built on top of the Astrofy template, their readme is below
 
-# ------------ ------------ ------------ ------------ ------------
+# ------------ ------------ ------------
 
 # Astrofy | Personal Portfolio Website Template
 
